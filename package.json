@@ -10,7 +10,8 @@
         "body-parser": "^1.18.3",
         "express": "^4.16.4",
         "express-session": "^1.17.3",
-        "http-proxy-middleware": "^2.0.6"
+        "http-proxy-middleware": "^2.0.6",
+        "mysql": "^2.18.1"
     },
     "devDependencies": {
         "concurrently": "^4.0.1"
