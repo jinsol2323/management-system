@@ -9,13 +9,13 @@ class Customer extends React.Component{
     render() {
         return(
             <TableRow>
-                <TableCell>{this.props.id}</TableCell>
-                <TableCell><img src={this.props.image} alt="profile"/></TableCell>
-                <TableCell>{this.props.name}</TableCell>
-                <TableCell>{this.props.birthday}</TableCell>
-                <TableCell>{this.props.gender}</TableCell>
-                <TableCell>{this.props.job}</TableCell>
-                <TableCell><CustomerDelete stateRefresh={this.props.stateRefresh} id={this.props.id}/></TableCell>
+                <TableCell align='center'>{this.props.id}</TableCell>
+                <TableCell align='center'><img width='85rem' src={this.props.image} alt="profile"/></TableCell>
+                <TableCell align='center'>{this.props.name}</TableCell>
+                <TableCell align='center'>{this.props.birthday}</TableCell>
+                <TableCell align='center'>{this.props.gender}</TableCell>
+                <TableCell align='center'>{this.props.job}</TableCell>
+                <TableCell align='center'><CustomerDelete stateRefresh={this.props.stateRefresh} id={this.props.id}/></TableCell>
             </TableRow>
         )
     }

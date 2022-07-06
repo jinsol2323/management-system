@@ -224,28 +224,30 @@ class App extends Component{
           </div>
           <Paper className={classes.paper}>
             <Table className={classes.table}>
-              <TableHead>
+              <TableHead align='center'>
                 <TableRow>
-                  <TableCell>번호</TableCell>
-                  <TableCell>이미지</TableCell>
-                  <TableCell>이름</TableCell>
-                  <TableCell>생년원일</TableCell>
-                  <TableCell>성별</TableCell>
-                  <TableCell>직업</TableCell>
-                  <TableCell>설정</TableCell>
+                  <TableCell align='center'>번호</TableCell>
+                  <TableCell align='center'>이미지</TableCell>
+                  <TableCell align='center'>이름</TableCell>
+                  <TableCell align='center'>생년원일</TableCell>
+                  <TableCell align='center'>성별</TableCell>
+                  <TableCell align='center'>직업</TableCell>
+                  <TableCell align='center'>설정</TableCell>
                 </TableRow>
               </TableHead>
-              <TableBody>
-                {this.state.customers ? 
-                filteredComponents(this.state.customers):
-              <TableRow>
-                <TableCell colSpan="6" align='center'>
-                  <CircularProgress className={classes.progress} value={this.state.completed}></CircularProgress>
 
-                </TableCell>
-              </TableRow>
-              }
+              <TableBody>
+                {
+                this.state.customers ? 
+                filteredComponents(this.state.customers):
+                <TableRow>
+                  <TableCell colSpan="6" align='center'>
+                    <CircularProgress className={classes.progress} value={this.state.completed}></CircularProgress>
+                  </TableCell>
+                </TableRow>
+                }
               </TableBody>
+
             </Table>       
           </Paper>
         </div>
